@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAD506B414D1C498008BB5FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506B314D1C498008BB5FD /* UIKit.framework */; };
+		EAD506B614D1C498008BB5FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506B514D1C498008BB5FD /* Foundation.framework */; };
+		EAD506B814D1C498008BB5FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506B714D1C498008BB5FD /* CoreGraphics.framework */; };
+		EAD506BE14D1C498008BB5FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAD506BC14D1C498008BB5FD /* InfoPlist.strings */; };
+		EAD506C014D1C498008BB5FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD506BF14D1C498008BB5FD /* main.m */; };
+		EAD506C414D1C498008BB5FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD506C314D1C498008BB5FD /* AppDelegate.m */; };
+		EAD506C714D1C498008BB5FD /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD506C614D1C498008BB5FD /* GamesViewController.m */; };
+		EAD506C914D1C498008BB5FD /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD506C814D1C498008BB5FD /* first.png */; };
+		EAD506CB14D1C498008BB5FD /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD506CA14D1C498008BB5FD /* first@2x.png */; };
+		EAD506CE14D1C499008BB5FD /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD506CD14D1C499008BB5FD /* StatsViewController.m */; };
+		EAD506D014D1C499008BB5FD /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD506CF14D1C499008BB5FD /* second.png */; };
+		EAD506D214D1C499008BB5FD /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD506D114D1C499008BB5FD /* second@2x.png */; };
+		EAD506D514D1C499008BB5FD /* GamesViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD506D314D1C499008BB5FD /* GamesViewController_iPhone.xib */; };
+		EAD506D814D1C499008BB5FD /* GamesViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD506D614D1C499008BB5FD /* GamesViewController_iPad.xib */; };
+		EAD506DB14D1C499008BB5FD /* StatsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD506D914D1C499008BB5FD /* StatsViewController_iPhone.xib */; };
+		EAD506DE14D1C499008BB5FD /* StatsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD506DC14D1C499008BB5FD /* StatsViewController_iPad.xib */; };
+		EAD506EB14D1C7A9008BB5FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506EA14D1C7A9008BB5FD /* Parse.framework */; };
+		EAD506ED14D1C7DD008BB5FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506EC14D1C7DD008BB5FD /* AudioToolbox.framework */; };
+		EAD506EF14D1C7E6008BB5FD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506EE14D1C7E6008BB5FD /* CFNetwork.framework */; };
+		EAD506F114D1C7F8008BB5FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506F014D1C7F8008BB5FD /* SystemConfiguration.framework */; };
+		EAD506F314D1C800008BB5FD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506F214D1C800008BB5FD /* MobileCoreServices.framework */; };
+		EAD506F514D1C810008BB5FD /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506F414D1C810008BB5FD /* libz.1.1.3.dylib */; };
+		EAD506F714D1C817008BB5FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506F614D1C817008BB5FD /* Security.framework */; };
+		EAD506F914D1C81F008BB5FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD506F814D1C81F008BB5FD /* QuartzCore.framework */; };
+		EAD506FE14D1C980008BB5FD /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD506FD14D1C980008BB5FD /* Service.m */; };
+		EAD5070114D1CA63008BB5FD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD5070014D1CA63008BB5FD /* User.m */; };
+		EAD5070414D1CAD8008BB5FD /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD5070314D1CAD8008BB5FD /* Game.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EAD506AF14D1C498008BB5FD /* FooseStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooseStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD506B314D1C498008BB5FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAD506B514D1C498008BB5FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAD506B714D1C498008BB5FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAD506BB14D1C498008BB5FD /* FooseStats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FooseStats-Info.plist"; sourceTree = "<group>"; };
+		EAD506BD14D1C498008BB5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAD506BF14D1C498008BB5FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAD506C114D1C498008BB5FD /* FooseStats-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FooseStats-Prefix.pch"; sourceTree = "<group>"; };
+		EAD506C214D1C498008BB5FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAD506C314D1C498008BB5FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAD506C514D1C498008BB5FD /* GamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
+		EAD506C614D1C498008BB5FD /* GamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamesViewController.m; sourceTree = "<group>"; };
+		EAD506C814D1C498008BB5FD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EAD506CA14D1C498008BB5FD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		EAD506CC14D1C499008BB5FD /* StatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		EAD506CD14D1C499008BB5FD /* StatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		EAD506CF14D1C499008BB5FD /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		EAD506D114D1C499008BB5FD /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		EAD506D414D1C499008BB5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GamesViewController_iPhone.xib; sourceTree = "<group>"; };
+		EAD506D714D1C499008BB5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GamesViewController_iPad.xib; sourceTree = "<group>"; };
+		EAD506DA14D1C499008BB5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StatsViewController_iPhone.xib; sourceTree = "<group>"; };
+		EAD506DD14D1C499008BB5FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StatsViewController_iPad.xib; sourceTree = "<group>"; };
+		EAD506EA14D1C7A9008BB5FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EAD506EC14D1C7DD008BB5FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAD506EE14D1C7E6008BB5FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EAD506F014D1C7F8008BB5FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EAD506F214D1C800008BB5FD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EAD506F414D1C810008BB5FD /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		EAD506F614D1C817008BB5FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EAD506F814D1C81F008BB5FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAD506FC14D1C980008BB5FD /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		EAD506FD14D1C980008BB5FD /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		EAD506FF14D1CA63008BB5FD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		EAD5070014D1CA63008BB5FD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		EAD5070214D1CAD8008BB5FD /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		EAD5070314D1CAD8008BB5FD /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAD506AC14D1C498008BB5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD506F914D1C81F008BB5FD /* QuartzCore.framework in Frameworks */,
+				EAD506F714D1C817008BB5FD /* Security.framework in Frameworks */,
+				EAD506F514D1C810008BB5FD /* libz.1.1.3.dylib in Frameworks */,
+				EAD506B814D1C498008BB5FD /* CoreGraphics.framework in Frameworks */,
+				EAD506F314D1C800008BB5FD /* MobileCoreServices.framework in Frameworks */,
+				EAD506F114D1C7F8008BB5FD /* SystemConfiguration.framework in Frameworks */,
+				EAD506EF14D1C7E6008BB5FD /* CFNetwork.framework in Frameworks */,
+				EAD506ED14D1C7DD008BB5FD /* AudioToolbox.framework in Frameworks */,
+				EAD506B414D1C498008BB5FD /* UIKit.framework in Frameworks */,
+				EAD506B614D1C498008BB5FD /* Foundation.framework in Frameworks */,
+				EAD506EB14D1C7A9008BB5FD /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAD506A414D1C498008BB5FD = {
+			isa = PBXGroup;
+			children = (
+				EAD506B914D1C498008BB5FD /* FooseStats */,
+				EAD506B214D1C498008BB5FD /* Frameworks */,
+				EAD506B014D1C498008BB5FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAD506B014D1C498008BB5FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAD506AF14D1C498008BB5FD /* FooseStats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAD506B214D1C498008BB5FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAD506F814D1C81F008BB5FD /* QuartzCore.framework */,
+				EAD506F614D1C817008BB5FD /* Security.framework */,
+				EAD506F414D1C810008BB5FD /* libz.1.1.3.dylib */,
+				EAD506F214D1C800008BB5FD /* MobileCoreServices.framework */,
+				EAD506F014D1C7F8008BB5FD /* SystemConfiguration.framework */,
+				EAD506EE14D1C7E6008BB5FD /* CFNetwork.framework */,
+				EAD506EC14D1C7DD008BB5FD /* AudioToolbox.framework */,
+				EAD506EA14D1C7A9008BB5FD /* Parse.framework */,
+				EAD506B314D1C498008BB5FD /* UIKit.framework */,
+				EAD506B514D1C498008BB5FD /* Foundation.framework */,
+				EAD506B714D1C498008BB5FD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD506B914D1C498008BB5FD /* FooseStats */ = {
+			isa = PBXGroup;
+			children = (
+				EAD506E814D1C61A008BB5FD /* Resources */,
+				EAD506C214D1C498008BB5FD /* AppDelegate.h */,
+				EAD506C314D1C498008BB5FD /* AppDelegate.m */,
+				EAD506C514D1C498008BB5FD /* GamesViewController.h */,
+				EAD506C614D1C498008BB5FD /* GamesViewController.m */,
+				EAD506CC14D1C499008BB5FD /* StatsViewController.h */,
+				EAD506CD14D1C499008BB5FD /* StatsViewController.m */,
+				EAD506BA14D1C498008BB5FD /* Supporting Files */,
+				EAD506FC14D1C980008BB5FD /* Service.h */,
+				EAD506FD14D1C980008BB5FD /* Service.m */,
+				EAD506FF14D1CA63008BB5FD /* User.h */,
+				EAD5070014D1CA63008BB5FD /* User.m */,
+				EAD5070214D1CAD8008BB5FD /* Game.h */,
+				EAD5070314D1CAD8008BB5FD /* Game.m */,
+			);
+			path = FooseStats;
+			sourceTree = "<group>";
+		};
+		EAD506BA14D1C498008BB5FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAD506BB14D1C498008BB5FD /* FooseStats-Info.plist */,
+				EAD506BC14D1C498008BB5FD /* InfoPlist.strings */,
+				EAD506BF14D1C498008BB5FD /* main.m */,
+				EAD506C114D1C498008BB5FD /* FooseStats-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD506E814D1C61A008BB5FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAD506CF14D1C499008BB5FD /* second.png */,
+				EAD506D114D1C499008BB5FD /* second@2x.png */,
+				EAD506C814D1C498008BB5FD /* first.png */,
+				EAD506CA14D1C498008BB5FD /* first@2x.png */,
+				EAD506D314D1C499008BB5FD /* GamesViewController_iPhone.xib */,
+				EAD506D614D1C499008BB5FD /* GamesViewController_iPad.xib */,
+				EAD506D914D1C499008BB5FD /* StatsViewController_iPhone.xib */,
+				EAD506DC14D1C499008BB5FD /* StatsViewController_iPad.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAD506AE14D1C498008BB5FD /* FooseStats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD506E114D1C499008BB5FD /* Build configuration list for PBXNativeTarget "FooseStats" */;
+			buildPhases = (
+				EAD506AB14D1C498008BB5FD /* Sources */,
+				EAD506AC14D1C498008BB5FD /* Frameworks */,
+				EAD506AD14D1C498008BB5FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FooseStats;
+			productName = FooseStats;
+			productReference = EAD506AF14D1C498008BB5FD /* FooseStats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAD506A614D1C498008BB5FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = 3dDogStudios.com;
+			};
+			buildConfigurationList = EAD506A914D1C498008BB5FD /* Build configuration list for PBXProject "FooseStats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAD506A414D1C498008BB5FD;
+			productRefGroup = EAD506B014D1C498008BB5FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAD506AE14D1C498008BB5FD /* FooseStats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAD506AD14D1C498008BB5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD506BE14D1C498008BB5FD /* InfoPlist.strings in Resources */,
+				EAD506C914D1C498008BB5FD /* first.png in Resources */,
+				EAD506CB14D1C498008BB5FD /* first@2x.png in Resources */,
+				EAD506D014D1C499008BB5FD /* second.png in Resources */,
+				EAD506D214D1C499008BB5FD /* second@2x.png in Resources */,
+				EAD506D514D1C499008BB5FD /* GamesViewController_iPhone.xib in Resources */,
+				EAD506D814D1C499008BB5FD /* GamesViewController_iPad.xib in Resources */,
+				EAD506DB14D1C499008BB5FD /* StatsViewController_iPhone.xib in Resources */,
+				EAD506DE14D1C499008BB5FD /* StatsViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAD506AB14D1C498008BB5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD506C014D1C498008BB5FD /* main.m in Sources */,
+				EAD506C414D1C498008BB5FD /* AppDelegate.m in Sources */,
+				EAD506C714D1C498008BB5FD /* GamesViewController.m in Sources */,
+				EAD506CE14D1C499008BB5FD /* StatsViewController.m in Sources */,
+				EAD506FE14D1C980008BB5FD /* Service.m in Sources */,
+				EAD5070114D1CA63008BB5FD /* User.m in Sources */,
+				EAD5070414D1CAD8008BB5FD /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAD506BC14D1C498008BB5FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD506BD14D1C498008BB5FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAD506D314D1C499008BB5FD /* GamesViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD506D414D1C499008BB5FD /* en */,
+			);
+			name = GamesViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EAD506D614D1C499008BB5FD /* GamesViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD506D714D1C499008BB5FD /* en */,
+			);
+			name = GamesViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		EAD506D914D1C499008BB5FD /* StatsViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD506DA14D1C499008BB5FD /* en */,
+			);
+			name = StatsViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EAD506DC14D1C499008BB5FD /* StatsViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD506DD14D1C499008BB5FD /* en */,
+			);
+			name = StatsViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAD506DF14D1C499008BB5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAD506E014D1C499008BB5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAD506E214D1C499008BB5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FooseStats/FooseStats-Prefix.pch";
+				INFOPLIST_FILE = "FooseStats/FooseStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAD506E314D1C499008BB5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FooseStats/FooseStats-Prefix.pch";
+				INFOPLIST_FILE = "FooseStats/FooseStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAD506A914D1C498008BB5FD /* Build configuration list for PBXProject "FooseStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD506DF14D1C499008BB5FD /* Debug */,
+				EAD506E014D1C499008BB5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD506E114D1C499008BB5FD /* Build configuration list for PBXNativeTarget "FooseStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD506E214D1C499008BB5FD /* Debug */,
+				EAD506E314D1C499008BB5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAD506A614D1C498008BB5FD /* Project object */;
+}
